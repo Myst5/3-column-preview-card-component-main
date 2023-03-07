@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-darkk-cyan: hsl(179, 100%, 13%);
+  --lexend: "Lexend Deca", sans-serif;
+  --bigshould: "Big Shoulders Display";
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 15px;
+}
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  font-size: 15px;
+  font-family: var(--lexend);
+}
+.container {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  background-color: darkcyan;
+  height: 550px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bright-orange);
+  grid-column: 1 / 1;
+  padding: 45px 50px 0 50px;
+}
+.middle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-cyan);
+  grid-column: 2 / 3;
+  grid-row: 1 / 1;
+  padding: 45px 50px 0 50px;
+}
+.right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--very-darkk-cyan);
+  grid-column: 3 / 4;
+  padding: 45px 50px 0 50px;
+}
+img {
+  width: 90px;
+}
+h1 {
+  font-family: var(--bigshould);
+  font-size: 50px;
+  color: hsl(0, 0%, 95%);
+  padding-top: 50px;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-top: 30px;
+}
+
+button {
+  border-radius: 50px;
+  height: 50px;
+  width: 55%;
+  border-color: white;
+  color: var(--bright-orange);
+  border-style: solid;
+  margin-top: 80px;
+  font-weight: 700;
+  font-family: var(--lexend);
+}
+button:hover {
+  background-color: transparent;
+}
+.right button {
+  color: var(--very-darkk-cyan);
+}
+.middle button {
+  color: var(--dark-cyan);
+}
+.left button:hover {
+  color: hsl(0, 0%, 95%);
+}
+.right button:hover {
+  color: hsl(0, 0%, 95%);
+}
+.middle button:hover {
+  color: hsl(0, 0%, 95%);
+}

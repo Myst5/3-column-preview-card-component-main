@@ -101,3 +101,42 @@ button:hover {
 .middle button:hover {
   color: hsl(0, 0%, 95%);
 }
+@media only screen and (max-width: 375px) {
+  .container {
+    margin: 70px 0 70px 0;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 500px 500px 500px;
+    height: 100%;
+  }
+  .left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bright-orange);
+    grid-column: 1 / 1;
+    padding: 45px 50px 0 50px;
+  }
+  .middle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-cyan);
+    grid-row: 2 / 3;
+    grid-column: 1 / 1;
+    padding: 45px 50px 0 50px;
+  }
+  .right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-darkk-cyan);
+    grid-column: 1 / 1;
+    grid-row: 3 /4;
+
+    padding: 45px 50px 0 50px;
+  }
+}
